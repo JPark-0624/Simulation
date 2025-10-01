@@ -1,0 +1,14 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Simulation | run.py",
+      "type": "python",
+      "request": "launch",
+      "module": "simulation.run",
+      "cwd": "/home/juneil/Repo",
+      "console": "integratedTerminal",
+      "python": "/home/juneil/venvs/dev/bin/python"
+    }
+  ]
+}
