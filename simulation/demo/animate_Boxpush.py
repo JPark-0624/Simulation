@@ -23,10 +23,10 @@ SUBSTEPS_PER_FRAME = 4                 # physics steps per animation frame
 MU, BETA, REST   = 0.6, 0.25, 0.7      # friction, Baumgarte, restitution
 WORLD_MIN, WORLD_MAX = (0.0, 0.0), (1.0, 1.0)  # axes limits (match your walls)
 
-GOAL_X, GOAL_Y   = 0.80, 0.80          # goal for the robot
+GOAL_X, GOAL_Y   = 0.15, 0.80          # goal for the robot
 BOX_INIT         = dict(mass=1.0, width=0.10, height=0.10,
                         q0=[0.15, 0.50, 0.0], v0=[0.0, 0.0, 0.0])
-ROBOT_INIT       = dict(q0_xy=[0.05, 0.05], v0_xy=[0.0, 0.0])
+ROBOT_INIT       = dict(q0_xy=[0.15, 0.05], v0_xy=[0.0, 0.0])
 ROBOT_DRAW_RADIUS = 0.015
 GOAL_DRAW_RADIUS  = 0.020
 IMP_SCALE         = 40.0               # visual scale for impulse quivers

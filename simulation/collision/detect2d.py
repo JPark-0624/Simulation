@@ -133,7 +133,10 @@ def obb_signed_distance_point(p_world: np.ndarray,
     # tangent (right-handed)
     t_world = np.array([ n_world[1], -n_world[0] ], dtype=float)
 
-    return float(phi), n_world, t_world, cp_world
+    n = -n_world  # flip normal to point from box -> point
+    t = -t_world  # flip tangent accordingly
+
+    return float(phi), n, t, cp_world
 
 def point_vs_obb_contact(p_world: np.ndarray,
                          center: np.ndarray,
